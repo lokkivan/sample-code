@@ -1,0 +1,11 @@
+.table.table-striped a.glyphicon {
+    margin-right: 10px;
+}
+
+.table.table-striped a.glyphicon:last-child {
+    margin-right: 0px;
+}
+
+.table.table-striped a.glyphicon:hover, .table.table-striped a.glyphicon:active {
+    text-decoration: none !important;
+}

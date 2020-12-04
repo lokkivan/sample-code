@@ -1,0 +1,27 @@
+<?php
+
+return [
+    'user' => 'Пользователь',
+    'id' => 'ID',
+    'email' => 'Email',
+    'password' => 'Пароль',
+    'repeat_password' => 'Повторите пароль',
+    'phone' => 'Телефон',
+    'name' => 'Имя пользователя',
+    'role' => 'Право доступа',
+    'comment' => 'Комментарий',
+    'role_guest' => 'Гость',
+    'role_user' => 'Пользователь',
+    'role_manager' => 'Менеджер',
+    'role_admin' => 'Администратор',
+    'unknown_role' => 'Неизвестная роль',
+    'user_created' => 'Пользователь :email создан',
+    'user_updated' => 'Пользователь :email изменен',
+    'user_deleted' => 'Пользователь :email удален',
+    'user_password_updated' => 'Пароль пользователя :email изменен',
+    'user_role_updated' => 'Роль пользователя :email изменен',
+    'user_remove_confirm' => 'Вы действительно хотите удалить данного пользователя?',
+    'update_user' => 'Изменить пользователя',
+    'change_password' => 'Изменить пароль',
+    'remove_user' => 'Удалить пользователя',
+];

@@ -1,0 +1,41 @@
+<?php
+
+namespace App\Providers;
+
+use App\Models\Layout;
+use App\Models\Site;
+use App\Models\Template;
+use App\Models\User;
+use App\Observers\LayoutObserver;
+use App\Observers\SiteObserver;
+use App\Observers\TemplateObserver;
+use App\Observers\UserObserver;
+use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Schema;
+
+class AppServiceProvider extends ServiceProvider
+{
+    /**
+     * Register any application services.
+     *
+     * @return void
+     */
+    public function register()
+    {
+        //
+    }
+
+    /**
+     * Bootstrap any application services.
+     *
+     * @return void
+     */
+    public function boot()
+    {
+        Schema::defaultStringLength(191);
+        User::observe(UserObserver::class);
+        Layout::observe(LayoutObserver::class);
+        Site::observe(SiteObserver::class);
+        Template::observe(TemplateObserver::class);
+    }
+}
